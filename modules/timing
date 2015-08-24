@@ -1,0 +1,8 @@
+months=[]
+for m in range(0,12):
+    months.append(np.mean(np.mean(np.mean(data[m::12,:,south[0]:north[0],:], axis=3, dtype=np.float64), axis=2, dtype=np.float64), axis=0, dtype=np.float64))
+
+years=[]
+for y in range(0,len(data)/12):
+    years.append(np.mean(np.mean(np.mean(data[y*12:(y+1)*12,:,south[0]:north[0],:], axis=3, dtype=np.float64), axis=2, dtype=np.float64), axis=0, dtype=np.float64))
+
