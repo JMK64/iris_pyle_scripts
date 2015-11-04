@@ -4,7 +4,7 @@
 # for subdomains presented in Lawrence et al., 2001, ACP
 # Model data UM vn 8.4 
 #
-# Ines Heimann, June 2015
+# Ines Heimann, Nov 2015
 # based on David Wade, May 2015
 # based on R script by Alex Archibald, February 2012
 #**********************************************************
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 
-# Custom modules
+# Custom modules from the folder "modules"
 import lawrence_oh as l_oh
 
 #**********************************************************
@@ -45,12 +45,12 @@ hb       = [750,500,250]
 #**********************************************************
 # final vol is the volume of the gridboxes up to L63 in cm^3
 if   um == '7.3':
-    volfile  = ncdf.Dataset('/tacitus/ih280/um/n48_l60_geovol.nc')
+    volfile  = ncdf.Dataset('/scratch/ih280/netscratch/um/n48_l60_geovol.nc')
     lat      = volfile.variables['Lat'][:]
     vol      = volfile.variables['vol_theta'][:]
     vol      = vol[0]*1E6   # cm-3
 elif um == '8.4':
-    volfile  = ncdf.Dataset('/tacitus/ih280/um/n96_l63_geovol.nc')
+    volfile  = ncdf.Dataset('/scratch/ih280/netscratch/um/n96_l63_geovol.nc')
     lat      = volfile.variables['latitude'][:]
     vol      = volfile.variables['vol_theta'][:]
     vol      = vol*1E6   # cm-3
