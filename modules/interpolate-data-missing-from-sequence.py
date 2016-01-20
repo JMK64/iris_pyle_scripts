@@ -65,6 +65,6 @@ mergedlist = iris.cube.CubeList([mergew,merget,mergeq])
 querysave = raw_input("Do you want to save the result as netCDF? (y/n)")
 if querysave == "y":
   savename = raw_input("What do you want to save the resulting .nc file as?")
-  iris.save(mergedlist, "savename"+".nc", netcdf_format="NETCDF3_CLASSIC")
+  iris.save(mergedlist, savename+".nc", netcdf_format="NETCDF3_CLASSIC")
   print "Finished and saved result to file"
 else: print "Finished without saving to file, results should be available in memory to test and mainpulate."
