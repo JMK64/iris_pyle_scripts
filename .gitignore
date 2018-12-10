@@ -1,0 +1,10 @@
+*.nc
+*.~
+*.pyc
+*.elc
+*.png
+*.jpg
+*.pdf
+
+# for my MacOS homies
+*.DS_STORE
