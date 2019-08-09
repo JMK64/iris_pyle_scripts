@@ -11,4 +11,4 @@ moo ls moose:crum/{JOBID}/apm.pp/
 
 # archive specific Files (-f) from monthly mean PP stream
 # with VeryVerbose output in UMPP format 
-moo put -f -vv -c=umpp {JOBID}.pml{3,4,5}*  moose:crum/{JOBID}/apm.pp/
+moo put -f -vv -c=umpp {JOBID}a.pml{3,4,5}*  moose:crum/{JOBID}/apm.pp/
