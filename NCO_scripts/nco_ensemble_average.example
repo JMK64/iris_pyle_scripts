@@ -1,0 +1,2 @@
+# generate ensemble average of ch4 mass mixing ratio over the ukesm-1 historical ensemble
+ncea u-az5{13,15,24}_1850_2014_am_ch4.nc u-bb075_1850_2014_am_ch4.nc u-bb277_1850_2014_am_ch4.nc u-bc179_1850_2014_am_ch4.nc u-bc292_1850_2014_am_ch4.nc u-bc{37,47}0_1850_2014_am_ch4.nc -o ensemble_mean_ch4.nc

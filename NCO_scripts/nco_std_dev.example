@@ -1,0 +1,2 @@
+# genearate a file that is the std dev of zzTracer over a list of input files
+ncra -O -y rmssdn -v ${zzTracer} ${all_anom_file} ${std_dev_file}
